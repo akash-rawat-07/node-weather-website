@@ -1,3 +1,5 @@
+console.log("main execution file");
+
 const path = require('path');  // It is core module
 const express = require('express');
 const hbs = require('hbs');
