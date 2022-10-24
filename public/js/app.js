@@ -1,5 +1,5 @@
 
-console.log("Client side Javascript file is loaded");
+// console.log("Client side Javascript file is loaded");
 
 // fetch('https://puzzle.mead.io/puzzle').then((response) => {
 //     response.json().then((data) => {
@@ -24,10 +24,13 @@ weatherForm.addEventListener('submit', (e) => {
     response.json().then((data) => {
         if(data.error){
             messageOne.textContent = data.error;
+            console.log(data.error);
         }
         else{
             messageOne.textContent = data.location;
             messageTwo.textContent = data.forecast;
+            console.log(data.location);
+            console.log(data.forecast);
         }
     })
     })
